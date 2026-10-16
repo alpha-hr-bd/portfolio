@@ -1,416 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Alpha.HR | Portfolio</title>
-
+    <title>Alpha.HR — Portfolio & AI Assistant</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+<body class="bg-sky-50/50 text-slate-800 font-['Plus_Jakarta_Sans',sans-serif] antialiased selection:bg-sky-500 selection:text-white">
 
-<body>
-
-    <div class="bg"></div>
-
-    <!-- NAVBAR -->
-    <nav>
-        <div class="logo">
-            <span>ALPHA</span>.HR
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <button id="themeBtn">🌙</button>
-    </nav>
-
-
-    <!-- HERO -->
-    <section id="home" class="hero">
-
-        <div class="hero-text">
-
-            <p class="hello">👋 Hello, I'm</p>
-
-            <h1>Alpha Hayat Rat</h1>
-
-            <h2>
-                I'm a <span id="typing"></span>
-            </h2>
-
-            <p class="description">
-                ⚡ Turning ideas into digital experiences.
-                I'm a student, developer and creator who loves building
-                websites, learning technology and creating awesome projects.
-                🚀 Building. Learning. Growing.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn primary">
-                    View Projects 🚀
-                </a>
-
-                <a href="#contact" class="btn secondary">
-                    Contact Me
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="profile-box">
-
-            <div class="profile-glow"></div>
-
-            <div class="profile-image">
-                <!-- নিজের ছবি দিলে এই src change করবি -->
-                <img src="https://via.placeholder.com/500" alt="Alpha Hayat Rat">
-            </div>
-
-            <div class="floating-card card1">
-                💻 Developer & Creator
-            </div>
-
-            <div class="floating-card card2">
-                🚀 Future Entrepreneur
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-
-        <div class="section-title">
-            <p>GET TO KNOW ME</p>
-            <h2>About Me</h2>
-        </div>
-
-        <div class="about-container">
-
-            <div class="about-card">
-
-                <h3>Who am I? 👋</h3>
-
-                <p>
-                    I'm Alpha Hayat Rat, a student from Bangladesh and
-                    an aspiring developer. I enjoy building websites,
-                    exploring technology and turning creative ideas
-                    into real digital projects.
-                </p>
-
-                <p>
-                    My journey is all about learning, creating and growing.
-                    My goal is to become a successful entrepreneur and
-                    build amazing things for the internet.
-                </p>
-
-            </div>
-
-
-            <div class="info-grid">
-
-                <div class="info-card">
-                    <span>🎓</span>
-                    <h4>Student</h4>
-                    <p>Always Learning</p>
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-md border-b border-sky-100 shadow-xs transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                    Α
                 </div>
-
-                <div class="info-card">
-                    <span>🌍</span>
-                    <h4>Location</h4>
-                    <p>Bangladesh 🇧🇩</p>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg text-slate-900 tracking-tight">Alpha.HR</span>
+                    <span class="text-xs font-medium text-sky-600">Developer & Founder</span>
                 </div>
-
-                <div class="info-card">
-                    <span>💼</span>
-                    <h4>Goal</h4>
-                    <p>Entrepreneur</p>
-                </div>
-
-                <div class="info-card">
-                    <span>🔥</span>
-                    <h4>Passion</h4>
-                    <p>Technology & Web</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-
-        <div class="section-title">
-            <p>WHAT I DO</p>
-            <h2>My Skills</h2>
-        </div>
-
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <div class="skill-icon">🌐</div>
-
-                <h3>Web Development</h3>
-
-                <p>
-                    Creating responsive and modern websites using
-                    HTML, CSS and JavaScript.
-                </p>
-            </div>
-
-
-            <div class="skill-card">
-                <div class="skill-icon">🎨</div>
-
-                <h3>UI Design</h3>
-
-                <p>
-                    Designing clean, modern and user-friendly
-                    digital experiences.
-                </p>
-            </div>
-
-
-            <div class="skill-card">
-                <div class="skill-icon">💻</div>
-
-                <h3>Technology</h3>
-
-                <p>
-                    Exploring new technologies, tools and
-                    improving my digital skills.
-                </p>
-            </div>
-
-
-            <div class="skill-card">
-                <div class="skill-icon">🚀</div>
-
-                <h3>Projects</h3>
-
-                <p>
-                    Building creative projects and turning
-                    ideas into reality.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-
-        <div class="section-title">
-            <p>MY WORK</p>
-            <h2>Featured Projects</h2>
-        </div>
-
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-
-                <div class="project-image project1">
-                    🌐
-                </div>
-
-                <div class="project-content">
-
-                    <h3>DeshInfo</h3>
-
-                    <p>
-                        A Bangladesh-focused information and
-                        digital services platform.
-                    </p>
-
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <a href="https://github.com/alphe-hr"
-                       target="_blank"
-                       class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-image project2">
-                    📚
-                </div>
-
-                <div class="project-content">
-
-                    <h3>BDBZ</h3>
-
-                    <p>
-                        An educational platform with books,
-                        study materials and useful student tools.
-                    </p>
-
-                    <div class="tags">
-                        <span>Education</span>
-                        <span>Web</span>
-                    </div>
-
-                    <a href="https://github.com/alphe-hr"
-                       target="_blank"
-                       class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-image project3">
-                    🚀
-                </div>
-
-                <div class="project-content">
-
-                    <h3>More Coming Soon</h3>
-
-                    <p>
-                        More awesome projects and experiments
-                        are currently under development.
-                    </p>
-
-                    <div class="tags">
-                        <span>Coming Soon</span>
-                    </div>
-
-                    <a href="https://github.com/alphe-hr"
-                       target="_blank"
-                       class="project-btn">
-                        Explore GitHub →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- GITHUB -->
-    <section class="github-section">
-
-        <div class="github-content">
-
-            <h2>My GitHub 🚀</h2>
-
-            <p>
-                Check out my projects, experiments and
-                open-source work on GitHub.
-            </p>
-
-            <a href="https://github.com/alphe-hr"
-               target="_blank"
-               class="github-btn">
-
-                Visit @alphe-hr →
-
             </a>
 
-        </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="#about" class="hover:text-sky-600 transition-colors">About</a>
+                <a href="#skills" class="hover:text-sky-600 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-sky-600 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-sky-600 transition-colors">Contact</a>
+            </nav>
 
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-
-        <div class="section-title">
-
-            <p>LET'S TALK</p>
-            <h2>Contact Me</h2>
-
-        </div>
-
-
-        <div class="contact-box">
-
-            <p>
-                Have an idea, project or collaboration?
-                Feel free to contact me!
-            </p>
-
-            <div class="contact-buttons">
-
-                <a href="mailto:cmdsfun@gmail.com">
-                    📧 Email Me
-                </a>
-
-                <a href="https://github.com/alphe-hr"
-                   target="_blank">
-                    💻 GitHub
-                </a>
-
+            <div class="flex items-center gap-4">
+                <button onclick="openAiBot()" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-sky-500 to-blue-600 text-white font-semibold text-sm shadow-md shadow-sky-500/25 hover:shadow-lg hover:shadow-sky-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer">
+                    <i class="fa-solid fa-robot animate-pulse"></i>
+                    <span>New AI Bot</span>
+                </button>
+                <button id="mobileMenuBtn" class="md:hidden text-slate-700 text-xl p-2 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-
-            <p style="margin-top:20px;">
-                📧 cmdsfun@gmail.com
-            </p>
-
         </div>
 
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-sky-100 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#about" class="block text-slate-700 font-semibold py-1 hover:text-sky-600">About</a>
+            <a href="#skills" class="block text-slate-700 font-semibold py-1 hover:text-sky-600">Skills</a>
+            <a href="#projects" class="block text-slate-700 font-semibold py-1 hover:text-sky-600">Projects</a>
+            <a href="#contact" class="block text-slate-700 font-semibold py-1 hover:text-sky-600">Contact</a>
+            <button onclick="openAiBot()" class="w-full mt-2 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-semibold text-sm shadow-md flex items-center justify-center gap-2">
+                <i class="fa-solid fa-robot"></i> New AI Bot
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 -z-10 opacity-40 pointer-events-none">
+            <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-br from-sky-300 to-blue-400 rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sky-100/80 border border-sky-200 text-sky-700 text-xs font-bold tracking-wide uppercase shadow-2xs">
+                        <span class="w-2 h-2 rounded-full bg-sky-500 animate-ping"></span>
+                        Welcome to my digital space
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Hi, I'm <span class="bg-gradient-to-r from-sky-500 to-blue-600 bg-clip-text text-transparent">Mohammad Alpha Hayat Rat</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-medium">
+                        Passionate student, frontend web developer, and aspiring tech startup founder building clean user interfaces and smart web applications.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#projects" class="px-7 py-3.5 rounded-2xl bg-slate-900 text-white font-bold text-sm shadow-lg shadow-slate-900/20 hover:bg-slate-800 transition-all">
+                            Explore Projects <i class="fa-solid fa-arrow-down ml-2"></i>
+                        </a>
+                        <button onclick="openAiBot()" class="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold text-sm shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-105 transition-all">
+                            <i class="fa-solid fa-robot mr-2"></i> Launch AI Bot
+                        </button>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl bg-gradient-to-br from-sky-400 to-blue-600 p-1.5 shadow-2xl shadow-sky-500/30 group">
+                        <div class="w-full h-full bg-white rounded-[22px] flex flex-col items-center justify-center p-6 text-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-b from-sky-50/50 to-transparent"></div>
+                            <div class="w-24 h-24 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-4xl font-extrabold mb-4 shadow-inner">
+                                Α.HR
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-lg">Alpha.HR</h3>
+                            <p class="text-xs text-slate-500 font-medium mt-1">Student & Tech Creator</p>
+                            <div class="mt-4 flex gap-3 text-sky-600">
+                                <a href="https://github.com/alpha-hr-bd" target="_blank" class="w-9 h-9 rounded-xl bg-sky-50 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+                                <a href="#contact" class="w-9 h-9 rounded-xl bg-sky-50 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white/60 border-y border-sky-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">About Me</h2>
+                <p class="text-slate-600 mt-2 font-medium">A glimpse into my background, studies, and vision.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-sky-100 shadow-lg shadow-sky-500/5 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Student & Learner</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Dedicated student actively expanding my knowledge in science, mathematics, computer science, and modern web development technologies.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-sky-100 shadow-lg shadow-sky-500/5 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Frontend Developer</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Building functional, responsive web applications like POS systems, student portals, and interactive dashboards using HTML, CSS, JavaScript, and Tailwind.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-sky-100 shadow-lg shadow-sky-500/5 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Aspiring Founder</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Passionate about creating digital ventures, solving everyday problems through software, and establishing future-ready technology startups.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Skills & Technologies</h2>
+                <p class="text-slate-600 mt-2 font-medium">Tools and technologies I use to bring ideas to life.</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- Skill Card -->
+                <div class="bg-white p-6 rounded-3xl border border-sky-100 shadow-sm flex flex-col items-center text-center hover:border-sky-300 hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-50 text-orange-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <span class="font-bold text-slate-800 text-sm">HTML5</span>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-sky-100 shadow-sm flex flex-col items-center text-center hover:border-sky-300 hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <span class="font-bold text-slate-800 text-sm">CSS3</span>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-sky-100 shadow-sm flex flex-col items-center text-center hover:border-sky-300 hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-yellow-50 text-yellow-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <span class="font-bold text-slate-800 text-sm">JavaScript</span>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-sky-100 shadow-sm flex flex-col items-center text-center hover:border-sky-300 hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-sky-50 text-sky-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <span class="font-bold text-slate-800 text-sm">Tailwind CSS</span>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-sky-100 shadow-sm flex flex-col items-center text-center hover:border-sky-300 hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <span class="font-bold text-slate-800 text-sm">Git & GitHub</span>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-sky-100 shadow-sm flex flex-col items-center text-center hover:border-sky-300 hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <span class="font-bold text-slate-800 text-sm">Firebase</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h2>ALPHA.HR</h2>
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-20 bg-white/60 border-y border-sky-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Featured Projects</h2>
+                <p class="text-slate-600 mt-2 font-medium">Explore my live web applications and repository.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-3xl border border-sky-100 shadow-md overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all group">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl font-bold mb-4 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">BDBZ</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Digital book zone platform providing resources and literature access for students and book lovers in Bangladesh.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://bdbookzone.xo.je/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-sky-600 hover:text-sky-700">
+                            <span>Visit Live Site</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
 
-        <p>
-            Build. Learn. Create. 🚀
-        </p>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-3xl border border-sky-100 shadow-md overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all group">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl font-bold mb-4 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">GaanX</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Music streaming landing page featuring curated audio experiences and EmailJS subscription integration.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://alpha-hr-bd.github.io/GaanX/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-sky-600 hover:text-sky-700">
+                            <span>Visit Live Site</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
 
-        <p class="copyright">
+                <!-- Project 3 -->
+                <div class="bg-white rounded-3xl border border-sky-100 shadow-md overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all group">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl font-bold mb-4 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">AHR Home Rent System</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Streamlined rental property discovery and management system designed for effortless tenant-landlord connectivity.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://alpha-hr-bd.github.io/home-rent-xyz/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-sky-600 hover:text-sky-700">
+                            <span>Visit Live Site</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
 
-            © <span id="year"></span>
-            Alpha Hayat Rat. All Rights Reserved.
+                <!-- Project 4 -->
+                <div class="bg-white rounded-3xl border border-sky-100 shadow-md overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all group">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl font-bold mb-4 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">GitHub Profile</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Explore my open-source repositories, source code commits, web utilities, and continuous development logs.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://github.com/alpha-hr-bd" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-sky-600 hover:text-sky-700">
+                            <span>View GitHub</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Let's Connect</h2>
+            <p class="text-slate-600 mt-2 font-medium">Have a question or want to collaborate? Reach out via GitHub or launch the AI assistant.</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="https://github.com/alpha-hr-bd" target="_blank" class="px-6 py-3 rounded-2xl bg-white border border-sky-200 text-slate-800 font-bold shadow-sm hover:border-sky-400 transition-all flex items-center gap-2">
+                    <i class="fa-brands fa-github text-lg"></i> GitHub Profile
+                </a>
+                <button onclick="openAiBot()" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-robot"></i> Ask Alpha.HR AI
+                </button>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-white border-t border-sky-100 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <p class="text-sm text-slate-500 font-medium">© 2026 Mohammad Alpha Hayat Rat. All rights reserved.</p>
+            <div class="flex items-center gap-6 text-sm text-slate-600">
+                <a href="https://github.com/alpha-hr-bd" target="_blank" class="hover:text-sky-600"><i class="fa-brands fa-github text-lg"></i></a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Floating "New AI Bot" Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="openAiBot()" class="group relative flex items-center gap-3 px-5 py-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold shadow-xl shadow-sky-500/40 hover:scale-105 active:scale-95 transition-all cursor-pointer">
+            <span class="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full border-2 border-white animate-ping"></span>
+            <span class="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full border-2 border-white"></span>
+            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-robot animate-bounce"></i>
+            </div>
+            <span class="text-sm tracking-wide">New AI Bot</span>
+        </button>
+    </div>
 
+    <!-- FULLSCREEN AI BOT OVERLAY -->
+    <div id="aiOverlay" class="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-md flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
+        <div id="aiWindow" class="w-full h-full md:w-[92vw] md:h-[90vh] md:rounded-3xl bg-white/95 backdrop-blur-xl border border-sky-200/60 shadow-2xl flex flex-col overflow-hidden transform scale-90 transition-all duration-500">
+            
+            <!-- AI Header -->
+            <div class="px-6 py-4 bg-white/80 border-b border-sky-100 flex items-center justify-between shrink-0">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-sky-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-md shadow-sky-500/20">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h3 class="font-bold text-slate-900 text-base">Alpha.HR AI</h3>
+                            <span id="aiStatusBadge" class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-extrabold uppercase tracking-wider">AI Assistant</span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-medium">Ask about world time, currency, leaders & portfolio</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button onclick="clearChat()" title="New Chat" class="px-3 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-600 font-semibold text-xs transition-colors flex items-center gap-1.5 cursor-pointer">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        <span class="hidden sm:inline">New Chat</span>
+                    </button>
+                    <button onclick="closeAiBot()" title="Close (Esc)" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-rose-100 hover:text-rose-600 text-slate-700 flex items-center justify-center transition-colors cursor-pointer">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Message Area -->
+            <div id="chatContainer" class="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6 bg-gradient-to-b from-sky-50/30 to-white">
+                <!-- Welcome greeting injected via JS -->
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typingIndicator" class="hidden px-6 py-2 flex items-center gap-2 text-xs text-slate-400 font-medium bg-white/50">
+                <div class="flex gap-1">
+                    <div class="w-2 h-2 rounded-full bg-sky-400 animate-bounce"></div>
+                    <div class="w-2 h-2 rounded-full bg-sky-400 animate-bounce [animation-delay:0.2s]"></div>
+                    <div class="w-2 h-2 rounded-full bg-sky-400 animate-bounce [animation-delay:0.4s]"></div>
+                </div>
+                <span>Alpha.HR AI is thinking...</span>
+            </div>
+
+            <!-- Suggested Chips -->
+            <div class="px-4 sm:px-6 py-2.5 bg-white/60 border-t border-sky-100 flex items-center gap-2 overflow-x-auto shrink-0 scrollbar-none">
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-wider shrink-0">Suggestions:</span>
+                <button onclick="sendPresetPrompt('World Leaders')" class="px-3 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 border border-sky-200 text-sky-700 text-xs font-semibold shrink-0 transition-colors">👑 World Leaders</button>
+                <button onclick="sendPresetPrompt('World Clock')" class="px-3 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 border border-sky-200 text-sky-700 text-xs font-semibold shrink-0 transition-colors">🕒 World Clock</button>
+                <button onclick="sendPresetPrompt('100 USD koto BDT?')" class="px-3 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 border border-sky-200 text-sky-700 text-xs font-semibold shrink-0 transition-colors">💵 100 USD to BDT</button>
+                <button onclick="sendPresetPrompt('Who is Alpha.HR?')" class="px-3 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 border border-sky-200 text-sky-700 text-xs font-semibold shrink-0 transition-colors">👨‍💻 About Alpha.HR</button>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-4 sm:p-6 bg-white border-t border-sky-100 shrink-0">
+                <form id="chatForm" onsubmit="handleChatSubmit(event)" class="flex items-center gap-3">
+                    <div class="relative flex-1">
+                        <textarea id="chatInput" rows="1" placeholder="Type a message or ask about time, currency, leaders..." class="w-full px-4 py-3.5 pr-12 rounded-2xl bg-sky-50/70 border border-sky-200 focus:outline-none focus:border-sky-500 focus:bg-white text-sm text-slate-800 placeholder-slate-400 resize-none transition-all shadow-inner" onkeydown="handleKeydown(event)"></textarea>
+                    </div>
+                    <button type="submit" id="sendBtn" class="w-12 h-12 rounded-2xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white flex items-center justify-center shadow-md shadow-sky-500/25 transition-all shrink-0 cursor-pointer">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Application Logic Script -->
     <script src="script.js"></script>
-
 </body>
 </html>
